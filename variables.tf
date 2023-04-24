@@ -1,7 +1,6 @@
 variable "db" {
   type        = string
   description = "The name of the database"
-  default     = "test"
 }
 
 variable "db_character_set" {
@@ -19,13 +18,11 @@ variable "db_collation" {
 variable "user" {
   type        = string
   description = "The name of the user."
-  default     = "test"
 }
 
 variable "password" {
   type        = string
-  description = "Character set collation to use when a table is created without specifying an explicit collation."
-  default     = "password"
+  description = "MySql password."
 }
 
 variable "host" {
